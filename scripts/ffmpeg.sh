@@ -18,7 +18,7 @@ cpu=armv7-a
 [[ "$ndk_triple" == "aarch64"* ]] && cpu=armv8-a
 
 prefix="`pwd`/../../../prefix$dir_suffix"
-PKG_CONFIG_LIBDIR="`pwd`/../../../prefix$dir_suffix/lib/pkgconfig" \
+PKG_CONFIG_LIBDIR="$prefix/lib/pkgconfig" \
 ../configure \
 	--target-os=android --enable-cross-compile --cross-prefix=$ndk_triple- \
 	--arch=${ndk_triple%%-*} --cpu=$cpu --enable-{jni,mediacodec,gmp,gnutls} \
