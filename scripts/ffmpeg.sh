@@ -16,6 +16,7 @@ cd _build$dir_suffix
 
 cpu=armv7-a
 [[ "$ndk_triple" == "aarch64"* ]] && cpu=armv8-a
+[[ "$ndk_triple" == "x86_64"* ]] && cpu=generic
 
 ../configure \
 	--target-os=android --enable-cross-compile --cross-prefix=$ndk_triple- \

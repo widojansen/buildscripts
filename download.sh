@@ -53,6 +53,9 @@ toolchain_api=21
 ./build/tools/make_standalone_toolchain.py \
 	--arch arm64 --api $toolchain_api \
 	--install-dir `pwd`/../ndk-toolchain-arm64
+./build/tools/make_standalone_toolchain.py \
+	--arch x86_64 --api $toolchain_api \
+	--install-dir `pwd`/../ndk-toolchain-x64
 cd ..
 
 cd ..

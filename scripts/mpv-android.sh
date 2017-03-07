@@ -11,5 +11,8 @@ else
 	exit 255
 fi
 
-PREFIX=`pwd`/../prefix/ PREFIX64=`pwd`/../prefix64 NDK_TOOLCHAIN_VERSION=4.9 ndk-build -C app/src/main
+PREFIX=`pwd`/../prefix \
+PREFIX64=`pwd`/../prefix64 \
+PREFIX_X64=`pwd`/../prefix-x64 \
+NDK_TOOLCHAIN_VERSION=4.9 ndk-build -C app/src/main
 ./gradlew assembleDebug
