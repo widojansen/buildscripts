@@ -4,7 +4,7 @@ v_sdk=r24.4.1
 v_ndk=r13b
 v_lua=5.2.4
 v_fribidi=0.19.7
-v_gnutls=3.5.9
+v_gnutls=3.5.10
 v_nettle=3.3
 
 . ./path.sh # load $os var
