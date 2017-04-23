@@ -4,7 +4,7 @@ v_sdk=r24.4.1
 v_ndk=r13b
 v_lua=5.2.4
 v_fribidi=0.19.7
-v_gnutls=3.5.10
+v_gnutls=3.5.11
 v_nettle=3.3
 
 . ./path.sh # load $os var
@@ -71,7 +71,7 @@ cd ..
 # gnutls
 mkdir gnutls
 cd gnutls
-wget https://www.gnupg.org/ftp/gcrypt/gnutls/v${v_gnutls%.*}/gnutls-$v_gnutls.tar.xz -O - | \
+wget ftp://ftp.gnutls.org/gcrypt/gnutls/v${v_gnutls%.*}/gnutls-$v_gnutls.tar.xz -O - | \
 	tar -xJ -f - --strip-components=1
 cd ..
 
